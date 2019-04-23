@@ -12,7 +12,7 @@ export class ModelFormComponent{
     this.studentModel=new FormGroup({
       Name:new FormControl('',[Validators.required]),
       PersonalInfo:new FormGroup({Address:new FormGroup({
-        City:new FormControl('',[Validators.email]),
+        City:new FormControl,
         State:new FormControl
       })})      
     });
