@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+{{studentModel.value|json}}
+<form [formGroup]="studentModel" novalidate>
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" class="form-control" formControlName="Name">
+  </div>
+  <div class="alert alert-danger" *ngIf="studentModel.controls['Name'].hasError('required')">
+    Name is required
+  </div>
+  <div formGroupName="PersonalInfo">
+  <div formGroupName="Address">
+  <div class="form-group">
+    <label for="City">City</label>
+    <input type="text" class="form-control" formControlName="City" >
+  </div>
+  <div class="form-group">
+    <label for="State">State</label>
+    <input type="text" class="form-control" formControlName="State" >
+  </div>
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="saveModel(studentModel.value)">Submit</button>
+</form>

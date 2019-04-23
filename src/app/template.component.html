@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+{{studentModel.value|json}}
+<form #studentModel="ngForm">
+	<div class="form-gtoup">
+		<label for="Name">Name</label>
+  <input type="text" name="Name" [(ngModel)]="Name" class="form-control">
+  </div>
+  <div class="form-gtoup">
+  <label for="City">City</label>
+  <input type="text" name="City" [(ngModel)]="City" class="form-control">
+  </div>
+  <div class="form-gtoup">
+  <label for="State">State</label>
+  <input type="text" name="State" [(ngModel)]="State" class="form-control">
+  </div>
+</form>
