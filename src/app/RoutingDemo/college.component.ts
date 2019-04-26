@@ -1,5 +1,8 @@
 import {Component} from '@angular/core'
-@Component{
+@Component({
   'selector':'coll-comp',
-  templateU
+  templateUrl:'./college.component.html'
+})
+export class CollegeComponent{
+  public title:string="Routing Demo";
 }
