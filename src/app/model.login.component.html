@@ -1,2 +1,7 @@
-<h1>{{title}}</h1>
-<a [routerLink]="['/java']">Java</a>
+<h1>{{title | lowercase}}</h1>
+
+<h1>The amount is {{amount| currency:'EUR'}}</h1>
+
+<h1>todays date {{todaysDate|date:'dd-mm-yyyy hh:mm'}}</h1>
+
+<h1>{{num12|cube:100}}</h1>

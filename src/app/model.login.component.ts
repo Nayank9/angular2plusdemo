@@ -6,4 +6,10 @@ import {Component} from '@angular/core'
 })
 export class ModelLoginComponent{
   public title:string='Login Form';
+
+  public amount=100;
+
+  public todaysDate=new Date();
+
+  public num12=5;
 }
